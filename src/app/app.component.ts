@@ -1,5 +1,8 @@
+
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 import { empty } from 'rxjs';
+
 
 @Component({
   selector: 'app-root',
@@ -8,5 +11,13 @@ import { empty } from 'rxjs';
 })
 export class AppComponent {
   title = 'app';
+
+  constructor( private routes:Router){}
+  id:number;
+  
+  run(){
+    this.routes.navigate(['/colors/green',this.id]);
+
+  }
   
 }

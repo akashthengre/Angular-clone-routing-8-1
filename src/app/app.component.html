@@ -1,3 +1,8 @@
 <p class="def">I am in component</p>
 
 <router-outlet></router-outlet>
+
+<!-- <button (click)='run()'>go to green </button> -->
+<!-- both works -->
+<a routerLink="/colors/green/{{id}}">go to green</a>
+<input type="text" value="" name="" [(ngModel)]='id'>

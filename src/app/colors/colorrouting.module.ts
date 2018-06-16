@@ -6,12 +6,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 const routes : Routes = [
-  {path:'colors',
-  children : [
-  {path : 'red', component: RedComponent},
-  {path : 'green', component: GreenComponent}
-  ]
-}
+  {path : 'green',component:GreenComponent}
+  
 ];
 
 @NgModule({
