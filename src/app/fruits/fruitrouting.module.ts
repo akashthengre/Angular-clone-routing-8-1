@@ -6,9 +6,12 @@ import { BananaComponent } from './banana/banana.component';
 
 
 const routes : Routes = [
-{path : 'apple' , component : AppleComponent},
-{path : 'banana' , component : BananaComponent},
-{path : '' , component : AppleComponent}
+  {path:'fruits',
+        children :[
+        {path : 'apple' , component : AppleComponent},
+        {path : 'banana' , component : BananaComponent},
+        ]
+}
 ];
 
 @NgModule({
